@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deergum.github.io/sitemap.xml
