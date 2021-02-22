@@ -10,9 +10,6 @@ tags:
 last_modified_at: 2021-02-04T08:06:00-05:00
 ---
 
-# Programmers - 땅따먹기
----
-
 ## 개요
 
 ![image](https://user-images.githubusercontent.com/47655983/106847602-9140e480-66f2-11eb-983d-e0d87f8555be.png)

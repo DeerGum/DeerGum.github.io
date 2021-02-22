@@ -12,9 +12,6 @@ tags:
 last_modified_at: 2021-02-11T08:06:00-05:00
 ---
 
-# [Programmers] 메뉴 리뉴얼
----
-
 ## 개요
 
 2021 kakao 공채 2번 문제

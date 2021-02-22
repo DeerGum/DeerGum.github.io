@@ -10,9 +10,6 @@ tags:
 last_modified_at: 2021-02-08T08:06:00-05:00
 ---
 
-# [Programmers] 신규아이디 추천
----
-
 ## 개요
 
 2021 kakao 공채 1번 문제
