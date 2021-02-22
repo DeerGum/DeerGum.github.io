@@ -4,15 +4,12 @@ search: true
 categories: 
   - algorithm
 tags:
-  - BOJ
+  - Programmers
   - Java
   - HashMap
   - HashSet
   - Queue
 last_modified_at: 2021-02-17T08:06:00-05:00
----
-
-# [Programmers] 보석쇼핑
 ---
 
 ## 개요
