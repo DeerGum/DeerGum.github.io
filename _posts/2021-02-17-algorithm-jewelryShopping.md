@@ -42,7 +42,7 @@ public class JewelryShopping {
             set.add(gems[i]);
         
         for(int i=0;i<gems.length;i++) {
-            if(map.containsKey(gems[i]))    //hASHmAP에 데이터가 있으면
+            if(map.containsKey(gems[i]))    //HashMap에 데이터가 있으면
                 map.put(gems[i], map.get(gems[i])+1);   //카운트 증가
             else
                 map.put(gems[i], 1);    //카운트 1로 추가
