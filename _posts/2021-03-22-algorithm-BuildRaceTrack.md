@@ -87,6 +87,6 @@ BFS로 탐색한 결과는 다음 이미지와 같다.
 
 ![image](https://user-images.githubusercontent.com/47655983/103513095-40e52580-4ead-11eb-8f48-e2644b26a5c8.png)
 
-### 결과
+## 결과
 
 ![image](https://user-images.githubusercontent.com/47655983/103512658-79383400-4eac-11eb-932b-25fbc85c7836.png)
