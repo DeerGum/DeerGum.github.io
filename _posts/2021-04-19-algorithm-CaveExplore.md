@@ -15,6 +15,7 @@ last_modified_at: 2021-04-19T08:06:00-05:00
 ## 개요
 
 2020 카카오 인턴쉽 문제
+
 미리 방문해야 하는 방과 다음에 방문해야 할 방을 기억해서 탐색해야 한다.
 
 [문제링크](https://programmers.co.kr/learn/courses/30/lessons/67260)
