@@ -6,7 +6,6 @@ categories:
 tags:
   - SWEA
   - Java
-  - Simulation
   - Implementation
 last_modified_at: 2021-08-05T08:06:00-05:00
 ---
@@ -27,7 +26,7 @@ import java.util.StringTokenizer;
 public class SWEA1210 {
     public static int[][] ladder;
     public static boolean[][] visited;
-    public static int[][] dir = {{0,-1},{0,1},{1,0}};   //왼쪽 오른쪽 아래
+    public static int[][] dir = { {0,-1}, {0,1}, {1,0} };   //왼쪽 오른쪽 아래
     public static int win;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -88,7 +87,7 @@ import java.util.StringTokenizer;
 public class SWEA1210_2 {
     public static int[][] ladder;
     public static boolean[][] visited;
-    public static int[][] dir = {{0,-1},{0,1},{-1,0}};   //왼쪽 오른쪽 위
+    public static int[][] dir = { {0,-1}, {0,1}, {-1,0} };   //왼쪽 오른쪽 위
     public static int win;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
