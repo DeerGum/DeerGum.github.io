@@ -10,7 +10,7 @@ last_modified_at: 2022-04-26T08:06:00-05:00
 
 싸피에서 진행했던 프로젝트를 살려두고 싶어서 내 자취방에 굴러다니는 라즈베리파이4를 서버로 활용해보기로 했다.
 
-<image src="https://user-images.githubusercontent.com/47655983/165224456-c82180ef-9ceb-4ff3-9c6d-51685430762b.png" width="500px">
+![라즈베리파이](https://user-images.githubusercontent.com/47655983/165224456-c82180ef-9ceb-4ff3-9c6d-51685430762b.png)
 
 <br>
 
@@ -38,7 +38,7 @@ sudo nano /etc/apt/sources.list
 
 <br>
 
-<image src="https://user-images.githubusercontent.com/47655983/165225628-8315e451-c13d-4177-b0d9-b55916478c9d.png">
+![터미널1](https://user-images.githubusercontent.com/47655983/165225628-8315e451-c13d-4177-b0d9-b55916478c9d.png)
 
 명령어 입력시 위와 같은 화면이 뜨는데 맨 처음에는 최상단 3개의 디폴트 주소로 되어있다.
 
@@ -86,7 +86,7 @@ N: Skipping acquire of configured file 'non-free/binary-arm64/Packages' as repos
 
 <br>
 
-<image src="https://user-images.githubusercontent.com/47655983/165227529-c7db2ade-0a94-422f-93e2-f7d46619c923.png">
+![터미널2](https://user-images.githubusercontent.com/47655983/165227529-c7db2ade-0a94-422f-93e2-f7d46619c923.png)
 
 <br>
 
@@ -128,5 +128,4 @@ All packages are up to date.
 
 <br>
 
-<image src="https://user-images.githubusercontent.com/47655983/165229565-72d8d5a8-6cb8-4bd1-96ee-8fe09ee32913.png" width="300px">
-
+![우는짤](https://user-images.githubusercontent.com/47655983/165229565-72d8d5a8-6cb8-4bd1-96ee-8fe09ee32913.png)
