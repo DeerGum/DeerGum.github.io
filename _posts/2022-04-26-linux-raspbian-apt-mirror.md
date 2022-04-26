@@ -80,7 +80,7 @@ N: Skipping acquire of configured file 'non-free/binary-arm64/Packages' as repos
 위와 같이 주소를 바꿔주고 `apt-get update` 명령어를 입력해주니
 
 ```bash
-& sudo apt update
+$ sudo apt update
 Get:1 http://ftp.kaist.ac.kr/debian bullseye InRelease [116 kB]
 Get:2 http://ftp.kaist.ac.kr/debian bullseye/main Sources [8,627 kB]
 Hit:3 http://archive.raspberrypi.org/debian bullseye InRelease
