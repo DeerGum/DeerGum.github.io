@@ -13,7 +13,7 @@ last_modified_at: 2022-04-27T08:06:00-05:00
 
 이번에 프로젝트 서버를 내 라즈베리파이에 띄우는 작업을 하면서 docker 설치방법을 정리해보았다.
 
-참고로 라즈비안OS를 기준으로 작성되었다.
+참고로 라즈베리파이를 기준으로 작성되었다.
 
 ## 목차
 1. docker 설치
@@ -116,7 +116,7 @@ docker daemon은 root 권한을 통해 실행되기 때문에 일반 사용자 �
 
 여기서는 사용자 설정을 통해 해결해보겠다.
 
-다음 명령어를 입력해준다.
+### 도커 그룹에 사용자 추가
 ```bash
 $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
@@ -130,20 +130,45 @@ $ sudo usermod -aG docker $USER
 
 이제 docker와 함께 많이 사용하는 docker-compose를 설치해보자
 
-설치 명령어
+라즈베리파이가 아닌 x86 시스템을 사용하는 리눅스는 아래 명령어를 통해 설치하자.
+
+### 라즈베리파이 이외 시스템 docker-compose 설치 명령어
 ```bash
-$ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
-도커 컴포즈에 권한 설정
+<br>
+
+라즈베리파이는 아래 명령어로 `pip3`를 설치하고 `pip3`를 사용해 설치한다.
+
+라즈베리파이는 위의 명령어로 설치하면 제대로 설치가 안되는 버그가 있다.
+
+### 라즈베리파이 `pip3` 설치
+```bash
+sudo apt-get install libffi-dev libssl-dev
+sudo apt install python3-dev
+sudo apt-get install -y python3 python3-pip
+```
+
+### 라즈베리파이 docker-compose 설치
+```bash
+sudo pip3 install docker-compose
+```
+
+<br>
+이후엔 권한과 심볼릭 링크 설정으로 마무리해준다.
+
+### 도커 컴포즈에 권한 설정
 ```bash
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-심볼릭 링크 설정
+### 심볼릭 링크 설정
 ```bash
 $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
+
+<br>
 
 마지막으로 도커 컴포즈 명령어를 입력해 설치가 잘되었는지 확인해본다
 ```bash
@@ -151,18 +176,19 @@ $ docker-compose -version
 docker-compose version 1.25.0, build unknown
 ```
 
+<br>
+
 만약 아래 처럼 docker-compose를 찾을 수 없다고 뜬다면
 ```bash
 $ docker-compose
 /usr/local/bin/docker-compose: 1: Not: not found
 ```
 
-`sudo apt-get docker-compose` 명령어를 사용해 설치해보고 그래도 안되면
+설치가 제대로 안되었거나 설정이 잘못되었을 가능성이 크다.
 
-`sudo apt remove docker-compose` 명령어를 통해 삭제후 다시 위의 apt-get 명령어로 재설치해보자
-
-<br>
-
-이것으로 docker와 docker-compose 설치가 끝났다. 
-
-이후 포스팅에서는 docker와 jenkins를 이용한 cicd 구축을 포스팅해보겠다.
+아래 명령어로 docker-compose를 지우고 재설치를 해보자
+```bash
+sudo rm /usr/local/bin/docker-compose
+sudo apt remove docker-compose
+sudo apt autoremove
+```
