@@ -75,6 +75,7 @@ last_modified_at: 2022-06-29T08:06:00-05:00
 ## 의존관계 주입 DI(Dependency Injection)
 ### 의존관계
 - 의존관계란 의존대상 B가 변하면 그것이 A에 영향을 미치는 것이라고 표현할 수 있음
+
 ```java
 class A {
   public void func() {
